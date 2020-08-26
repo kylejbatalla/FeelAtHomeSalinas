@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel= "stylesheet" type = "text/css" href = "CSS/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/lightbox.min.css">
+    <script src = "Js/lightbox-plus-jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width">
+    <meta name = "description" content = "Local Residential Care Facility">
+    <meta name = "keywords" content = "care home, retirement home, residential home">
+    <meta name = "author" content ="Kyle Batalla">
+    <title>Feel At Home Salinas</title>
+    <link rel="stylesheet" href = "./css/style.css">
+    <style>
+    #map{
+      height:400px;
+      width:90%;
+      margin: 10px auto 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./Images/Log.png"  class ="center">
+        <nav>
+          <u1 class = "nav">
+            <li class = "current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </u1>
+        </nav>
+    </header>
+    <div class = "Update">
+    <h1>Update: June 2020</h1>
+    <p>After almost 15 years of service, Feel At Home will
+      closing down by the end of 2020 and will no longer accept
+      new patients. We want to thank the families that have trusted
+      us through the years and hope we made a difference in their lives.
+      This website will still remain open for developer purposes.
+    </div>
+    <section id = "showcase">
+      <div class = "container">
+        <h1>Our Mission:</h1>
+        <p>To ensure the highest quality of attention and support for your loved ones
+        by providing 24/7, 1-on-1 care in a small family oriented
+        facility. With our friendly and experienced staff, we believe you
+        should feel that your loved ones are safe, comfortable, and 100%
+        accounted for. This is where they will feel at home. Feel free to contact
+        for inquiries.</p>
+    </section>
+
+    <div class = "Fam">
+      <h2>Family owned and operated for 15+ years...</h2>
+      <p>Providing trusted elderly care services
+      <br>for their day to day needs, so you don't need to worry</p>
+    </div>
+  <div class = "gallery">
+    <h2><u>Gallery</u></h2>
+    <a href = "Images/IMG_6845.jpg" data-lightbox="mygallery" data-title ="Click outside photo to exit & left/right sides of photo to switch."> <img src="Images/IMG_6845.jpg"  style="width:30%"></a>
+    <a href = "Images/IMG_2953.jpg" data-lightbox="mygallery" data-title ="Click outside photo to exit & left/right sides of photo to switch.">  <img src="Images/IMG_2953.jpg"  style="width:30%"></a>
+    <a href = "Images/IMG_5559.jpg" data-lightbox="mygallery" data-title ="Click outside photo to exit & left/right sides of photo to switch."><img src="Images/IMG_5559.jpg"  style="width:30%"></a>
+    <a href = "Images/IMG_7730.jpg" data-lightbox="mygallery" data-title ="Click outside photo to exit & left/right sides of photo to switch."><img src="Images/IMG_7730.jpg"  style="width:30%"></a>
+    <a href = "Images/IMG_2958.jpg" data-lightbox="mygallery" data-title ="Click outside photo to exit & left/right sides of photo to switch."><img src="Images/IMG_2958.jpg"  style="width:30%"></a>
+    <a href = "Images/IMG_5564.jpg" data-lightbox="mygallery" data-title ="Click outside photo to exit & left/right sides of photo to switch."><img src="Images/IMG_5564.jpg"  style="width:30%"></a>
+  </div>
+</div>
+</div>
+<div class = "loc">
+<h1>Where We're Located</h1>
+</div>
+<div id = "map"></div>
+<script>
+  function initMap(){
+    var options = {
+      zoom:12,
+      center:{lat:36.698970,lng:-121.602319}
+    }
+    var map = new
+    google.maps.Map(document.getElementById('map'), options);
+
+    var marker = new google.maps.Marker({
+      position:{lat:36.698970,lng:-121.602319},
+      map:map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmdaSM6ph627Di9tZMTjmGzMphc6ip2yE&callback=initMap"
+type="text/javascript"></script>
+<div class = "loc2">
+<p>Located in quiet North Salinas near creekbridge
+  neighborhood. <br>Address: 1546 Madrone Drive Salinas, Ca 93905</p>
+</div
+  <footer>
+    <footer class="site-footer">
+       <div class="container">
+         <div class="row">
+           <img src="./Images/Capture.png"  class ="center1">
+           <div class="col-xs-6 col-md-3">
+             <h6>Quick Links</h6>
+             <ul class="footer-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+             </ul>
+           </div>
+         </div>
+         <hr>
+       </div>
+       <div class="container">
+         <div class="row">
+           <div class="col-md-8 col-sm-6 col-xs-12">
+             <p class="copyright-text">Feel At Home Residential Care Facility<br>
+               Facility License #275201303<br>
+               1546 Madrone Drive Salinas, Ca 93905
+             </p>
+           </div>
+         </div>
+       </div>
+       <div class = "end">
+         <p>Site designed by <a href="http://linkedin.com/in/kyle-batalla-639193189">Kyle Batalla</a></p>
+       </div>
+  </footer>
+  </body>
+</html>
